@@ -1,7 +1,7 @@
-package cl.duoc.ms_blogs_bff.controller;
+package cl.duoc.ms_users_bff.controller;
 
-import cl.duoc.ms_blogs_bff.model.UserDto;
-import cl.duoc.ms_blogs_bff.service.UserBffService;
+import cl.duoc.ms_users_bff.model.UserDto;
+import cl.duoc.ms_users_bff.service.UserBffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

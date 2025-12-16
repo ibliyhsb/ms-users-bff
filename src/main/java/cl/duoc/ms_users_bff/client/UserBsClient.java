@@ -1,6 +1,6 @@
-package cl.duoc.ms_blogs_bff.client;
+package cl.duoc.ms_users_bff.client;
 
-import cl.duoc.ms_blogs_bff.model.UserDto;
+import cl.duoc.ms_users_bff.model.UserDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

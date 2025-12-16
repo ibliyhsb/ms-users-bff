@@ -1,7 +1,7 @@
-package cl.duoc.ms_blogs_bff.service;
+package cl.duoc.ms_users_bff.service;
 
-import cl.duoc.ms_blogs_bff.model.UserDto;
-import cl.duoc.ms_blogs_bff.client.UserBsClient;
+import cl.duoc.ms_users_bff.model.UserDto;
+import cl.duoc.ms_users_bff.client.UserBsClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

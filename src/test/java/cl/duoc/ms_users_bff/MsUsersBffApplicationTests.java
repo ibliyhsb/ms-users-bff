@@ -1,10 +1,10 @@
-package cl.duoc.ms_blogs_bff;
+package cl.duoc.ms_users_bff;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsBlogsBffApplicationTests {
+class MsUsersBffApplicationTests {
 
 	@Test
 	void contextLoads() {

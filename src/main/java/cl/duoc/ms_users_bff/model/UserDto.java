@@ -1,4 +1,4 @@
-package cl.duoc.ms_blogs_bff.model;
+package cl.duoc.ms_users_bff.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
