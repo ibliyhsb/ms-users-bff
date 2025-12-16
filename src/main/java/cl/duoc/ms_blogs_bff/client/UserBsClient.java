@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "users-bs", url = "${bs.url:http://localhost:8081}")
+@FeignClient(name = "users-bs", url = "${ms-users-bs.url:http://localhost:8082}")
 public interface UserBsClient {
     @PostMapping("/users")
     UserDto createUser(@RequestBody UserDto userDto);

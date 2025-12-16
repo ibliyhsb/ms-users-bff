@@ -1,26 +1,35 @@
 package cl.duoc.ms_blogs_bff.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class UserDto {
+    @JsonProperty("id")
     private Long id;
-    private String username;
-    private String email;
-    private String password;
+    
+    @JsonProperty("nombreUsuario")
+    private String nombreUsuario;
+    
+    @JsonProperty("correoUsuario")
+    private String correoUsuario;
+    
+    @JsonProperty("passwordUsuario")
+    private String passwordUsuario;
 
     public UserDto() {}
 
-    public UserDto(Long id, String username, String email, String password) {
+    public UserDto(Long id, String nombreUsuario, String correoUsuario, String passwordUsuario) {
         this.id = id;
-        this.username = username;
-        this.email = email;
-        this.password = password;
+        this.nombreUsuario = nombreUsuario;
+        this.correoUsuario = correoUsuario;
+        this.passwordUsuario = passwordUsuario;
     }
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
-    public String getEmail() { return email; }
-    public void setEmail(String email) { this.email = email; }
-    public String getPassword() { return password; }
-    public void setPassword(String password) { this.password = password; }
+    public String getNombreUsuario() { return nombreUsuario; }
+    public void setNombreUsuario(String nombreUsuario) { this.nombreUsuario = nombreUsuario; }
+    public String getCorreoUsuario() { return correoUsuario; }
+    public void setCorreoUsuario(String correoUsuario) { this.correoUsuario = correoUsuario; }
+    public String getPasswordUsuario() { return passwordUsuario; }
+    public void setPasswordUsuario(String passwordUsuario) { this.passwordUsuario = passwordUsuario; }
 }
