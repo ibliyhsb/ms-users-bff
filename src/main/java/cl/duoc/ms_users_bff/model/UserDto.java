@@ -1,18 +1,22 @@
 package cl.duoc.ms_users_bff.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonAlias;
 
 public class UserDto {
     @JsonProperty("id")
     private Long id;
     
     @JsonProperty("nombreUsuario")
+    @JsonAlias({"username","nombreUsuario"})
     private String nombreUsuario;
     
     @JsonProperty("correoUsuario")
+    @JsonAlias({"email","correoUsuario"})
     private String correoUsuario;
     
     @JsonProperty("passwordUsuario")
+    @JsonAlias({"password","passwordUsuario"})
     private String passwordUsuario;
 
     public UserDto() {}

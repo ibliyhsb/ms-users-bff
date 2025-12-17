@@ -3,6 +3,7 @@ package cl.duoc.ms_users_bff.client;
 import cl.duoc.ms_users_bff.model.UserDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
+import java.util.Map;
 
 import java.util.List;
 
@@ -22,4 +23,7 @@ public interface UserBsClient {
 
     @DeleteMapping("/users/{id}")
     void deleteUser(@PathVariable("id") Long id);
+
+    @PostMapping("/users/login")
+    UserDto login(@RequestBody Map<String, String> credentials);
 }

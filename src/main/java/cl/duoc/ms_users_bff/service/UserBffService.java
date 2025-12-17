@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class UserBffService {
@@ -31,5 +33,12 @@ public class UserBffService {
 
     public void deleteUser(Long id) {
         userBsClient.deleteUser(id);
+    }
+
+    public UserDto login(String username, String password) {
+        Map<String, String> creds = new HashMap<>();
+        creds.put("username", username);
+        creds.put("password", password);
+        return userBsClient.login(creds);
     }
 }
